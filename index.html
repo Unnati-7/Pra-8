@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marwadi University</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      scroll-behavior: smooth;
+    }
+    .navbar { 
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .hero {
+      background-color: rgb(156, 232, 243);
+      color: white;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 15px;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+    }
+    .gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .recruiters img {
+      height: 70px;
+      margin: 15px;
+      filter: grayscale(100%);
+      transition: 0.3s;
+    }
+    .recruiters img:hover {
+      filter: grayscale(0%);
+      transform: scale(1.15);
+    }
+    footer {
+      background: #212529;
+      color: white;
+    }
+    footer a {
+      color: #f8f9fa;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+    footer a:hover {
+      color: #0dcaf0;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">Marwadi University</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#vision">Vision</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mission">Mission</a></li>
+          <li class="nav-item"><a class="nav-link" href="#outcomes">PSOs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#recruiters">Recruiters</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="display-4 fw-bold">Welcome to Marwadi University</h1>
+      <p class="lead">Empowering Students for a Brighter Future</p>
+      <a href="#vision" class="btn btn-info btn-lg mt-3">Explore More</a>
+    </div>
+  </section>
+
+
+  <section id="vision" class="container text-center my-5">
+    <h2 class="mb-3">Vision</h2>
+    <p class="lead">To impart quality education and foster research, innovation and teamwork to create professionally superior and ethically strong manpower.</p>
+  </section>
+
+
+  <section id="mission" class="container text-center my-5">
+    <h2 class="mb-3">Mission</h2>
+    <ul class="list-group shadow-sm">
+      <li class="list-group-item">Provide ICT enabled teaching and learning environment.</li>
+      <li class="list-group-item">Enable students to become digital age literates and professionals.</li>
+      <li class="list-group-item">Provide knowledge and skills to succeed as engineers and entrepreneurs.</li>
+      <li class="list-group-item">Prepare graduates for lifelong learning and ethical challenges.</li>
+    </ul>
+  </section>
+
+
+  <section id="outcomes" class="container my-5">
+    <h2 class="text-center mb-4">Program Specific Outcomes (PSOs)</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="card p-4 shadow-sm">
+          <i class="bi bi-cpu display-5 text-info mb-3"></i>
+          <h5>PSO 1</h5>
+          <p>Demonstrate skills and competence in analysis, design & development of computer-based solutions.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-4 shadow-sm">
+          <i class="bi bi-tools display-5 text-warning mb-3"></i>
+          <h5>PSO 2</h5>
+          <p>Design and implement solutions using modern tools and technologies.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-4 shadow-sm">
+          <i class="bi bi-shield-lock display-5 text-success mb-3"></i>
+          <h5>PSO 3</h5>
+          <p>Tackle future technological challenges in areas like Security, AR, IoT, etc.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="courses" class="container my-5">
+    <h2 class="text-center mb-4">Courses Offered</h2>
+    <div class="row g-3 text-center">
+      <div class="col-md-3"><div class="card p-3 shadow-sm">B.Tech - CSE</div></div>
+      <div class="col-md-3"><div class="card p-3 shadow-sm">B.Tech - AI/ML</div></div>
+      <div class="col-md-3"><div class="card p-3 shadow-sm">M.Tech - Cyber Security</div></div>
+      <div class="col-md-3"><div class="card p-3 shadow-sm">PhD - Computer Engineering</div></div>
+    </div>
+  </section>
+
+  <section id="gallery" class="container my-5">
+    <h2 class="text-center mb-4">Image Gallery of Events</h2>
+    <div class="row gallery g-3">
+      <div class="col-md-4"><img src="e-1.jpg" alt="Event 1"></div>
+      <div class="col-md-4"><img src="e-2.jpg" alt="Event 2"></div>
+      <div class="col-md-4"><img src="e-3.jpg" alt="Event 3"></div>
+      <div class="col-md-4"><img src="e-4.jpg" alt="Event 4"></div>
+      <div class="col-md-4"><img src="e-5.jpg" alt="Event 5"></div>
+      <div class="col-md-4"><img src="e-6.jpg" alt="Event 6"></div>
+    </div>
+  </section>
+
+  <section id="recruiters" class="container my-5 text-center">
+    <h2 class="mb-4">Top Recruiters</h2>
+    <div class="d-flex flex-wrap justify-content-center recruiters">
+      <img src="g-logo.jpg" alt="Google">
+      <img src="m-logo.jpg" alt="Microsoft">
+      <img src="a-logo.jpg" alt="Amazon">
+      <img src="t-logo.jpg" alt="TCS">
+    </div>
+  </section>
+
+  <footer class="text-center p-4">
+    <p>© 2025 Marwadi Education | All Rights Reserved</p>
+    <div>
+      <a href="#"><i class="bi bi-facebook fs-4"></i></a>
+      <a href="#"><i class="bi bi-twitter fs-4"></i></a>
+      <a href="#"><i class="bi bi-linkedin fs-4"></i></a>
+      <a href="#"><i class="bi bi-instagram fs-4"></i></a>
+    </div>
+  </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
